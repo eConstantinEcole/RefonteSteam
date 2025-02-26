@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --BlancSteam: #C7D5E0;
+    --BleuFondFonce: #171A21;
+    --BleuFondNeutre: #1B2838;
+    --BleuGrise: #2A475E;
+    --BleuPetant: #66C0F4;
+    --vertFluoSteam: #C8ED4D;
+    --vertFondSteam: #536A2D;
+}
+
+body{
+    background-color: var(--BleuFondFonce);
+}
+
+/* HEADER */
+header{
+    background-color: var(--BleuFondFonce);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+header p{
+    color: var(--BlancSteam);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+header p:hover{
+    transition: all 0.2s;
+    text-decoration: underline;
+    text-decoration-color: var(--BleuPetant);
+    color: var(--BlancSteam);
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+header #flecheNav{
+    color: var(--BlancSteam);
+    display: flex;
+
+}
+
+header #recherche{
+    color: var(--BlancSteam);
+    display: flex;
+}
+
+header img:hover{
+    cursor: pointer;
+}
+
+#menuBurger{
+    display: none;
+}
+
+/* Image de fond */
+#imgFond {
+    position: fixed;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden; 
+}
+
+#imgFond img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    opacity: 10%;
+}
+
+/* Bouton Messagerie */
+
+#btnMessage {
+    position: fixed;
+    top: 6rem;
+    right: 1rem;
+    
+}
+
+#btnMessage img {
+    display: block;
+}
+#btnMessage img:hover {
+    cursor: pointer;
+    width: 5rem;
+    transition: all 0.5s;
+}
+
+/* Ajustement global pour les sections */
+#videoDuJeu,
+#amisJoue,
+#descriptif,
+#payement,
+#payement p, 
+#payement h1, 
+#listeSouhait, 
+#suivre, 
+#ignorer, 
+#prix{
+    display: inline-block; 
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 20px; 
+    background-clip: padding-box; 
+
+}
+
+/* section VIDÉO JEU */
+
+#videoDuJeu{
+    color: var(--BlancSteam);
+    background: var(--BleuGrise);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* section VOS AMIS Y JOUENT */
+
+#amisJoue{
+    color: var(--BlancSteam);
+    background: var(--BleuGrise);
+    display: flex;
+    flex-direction: column;
+    width: 8%;
+    justify-content: center;
+    align-items: center;
+}
+
+#titreAmisJoue h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+#amisJoue img{
+    display: block;
+    margin: 0 auto;
+}
+
+#ligne1 {
+    display: flex;
+    justify-content: space-around; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+}
+
+#descriptif{
+    color: var(--BlancSteam);
+    background-color: var(--BleuGrise);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+#payement{
+    background-color: var(--BleuGrise);
+}
+
+#payement p{
+    align-items: center;
+    color: var(--BlancSteam);
+    background-color: var(--BleuFondNeutre);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+#payement h1{
+    background-color: var(--vertFluoSteam);
+    color: var(--vertFondSteam);
+    text-align: center;
+}
+#payement h1:hover{
+    color: var(--vertFluoSteam);
+    background-color: var(--vertFondSteam);
+    transition: .2s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#payement img{
+    display: block;
+    margin: 0 auto;
+}
+
+#ligne2{
+    display: flex;
+
+}
+
+#listeSouhait, #suivre, #ignorer{
+    color: var(--BlancSteam);
+    background-color: var(--BleuGrise);
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#listeSouhait:hover,
+#suivre:hover,
+#ignorer:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--BleuPetant);
+    cursor: pointer;
+}
+
+#prix{
+    color: var(--vertFluoSteam);
+    background-color: var(--vertFondSteam);
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: var(--BleuFondFonce);
+    color: var(--BlancSteam);
+    padding: 1rem;
+    
+}
+footer p{
+    font-size: 1.5rem;
+}
+
+#titreFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#infoFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+#texteFooter p:hover{
+    cursor: pointer;
+}
+
+#socialLogo img:hover{
+    cursor: pointer;
+}
+
+#logoValve {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+/* les MEDIA QUERY */
+
+/* Écran large */
+@media (min-width: 1024px) {
+
+}
+
+/* Tablette */
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    #menuBurger{
+        display: none;
+    }
+
+    body{
+        background-color: var(--BleuFondFonce);
+    }
+
+    #amisJoue{
+        background-color: var(--BleuGrise);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+    }
+
+    #imageAmis{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    #imagePayement {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    
+    header p{
+        display: none;
+    }
+    
+    #menuBurger{
+        display: block;
+    }
+    
+    body{
+        background-color: green;
+        
+    }
+
+    #videoDuJeu{
+        display: flex;
+        width: 85%;
+    }
+
+    #imgGrand img{
+        width: 100%;
+        height: 200%;
+    }
+    
+    #imagePayement {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+    }
+
+    #imgCaroussel {
+       display: flex;
+       flex-direction: row;
+       padding-top: 11rem;
+       
+       
+    }
+
+    #imgCaroussel img{
+        margin: 0 1rem;
+    }
+
+    #imgCaroussel img:nth-child(3),
+    #imgCaroussel img:nth-child(4) {
+        display: none;
+        
+    }
+
+    #amisJoue{
+        background-color: var(--BleuGrise);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    #imageAmis{
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    #ligne2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #descriptif{
+        width: 87%;
+        
+    }
+
+    #payement{
+
+        height: 100%;
+        text-align: center;
+        width: 60%;
+    }
+
+    #listeSouhait, #suivre, #ignorer{
+        display: none;
+    }
+
+
+}
+    
